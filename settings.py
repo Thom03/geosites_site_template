@@ -36,7 +36,7 @@ except:
     # if not available, read in GeoSites pre_settings
     execfile(os.path.join(GEOSITES_ROOT, 'pre_settings.py'))
 
-SITE_ID = $SITE_ID  # flake8: noqa
+SITE_ID = {{ site_id }}  # flake8: noqa
 SITE_NAME = '{{ project_name }}'
 # Should be unique for each site
 SECRET_KEY = "fbk3CC3N6jt1AU9mGIcI"
